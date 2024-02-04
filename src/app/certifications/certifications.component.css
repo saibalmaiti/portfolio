@@ -1,0 +1,10 @@
+.center-fit {
+    max-width: 100%;
+    max-height: 70vh;
+    margin-top: 25px;
+}
+.details {
+    font-family: "Source Code Pro", sans-serif;
+    color:#6c6c6c;
+    font-size: 1.0rem;
+  }

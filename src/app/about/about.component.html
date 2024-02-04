@@ -1,0 +1,23 @@
+<div class="container-fluid mt-2">
+    <div class="row">
+        <div class="col-md-6 mt-5">
+            <ng-lottie [options]="lottieOptions"></ng-lottie>
+        </div>
+        <div class="col-md-6">
+            <div class="intro-container" style="justify-content: center; display: flex;">
+                <h1 style="color: #6600ff">Know Who I'M</h1>
+            </div>
+            <div class="container-fluid">
+                <span class="details">Hi Everyone, I am <span style="color: #6600ff">Saibal Maiti</span> from <span style="color: #6600ff">Kolkata, India.</span>I am currently employed as a software developer at <span style="color: #6600ff">Cognizant.</span>I have completed Bachelor of Technology (B.Tech) in Electronics and Communication Enginnering from Academy of Technology, Hooghly.</span>
+            </div>
+        </div>
+    </div>
+    <div class="mt-5">
+        <h1 class="skill-heading">Professional Skillsets</h1>
+    </div>
+    <div class="row" style="justify-content: center; padding-bottom: 50px">
+        <div class="col-sm-2 col-md-2 tech-icons" *ngFor="let skill of skills" title="{{skill}}">
+            <img src="assets/skills/{{skill}}.svg" style="height: 6rem; width: 6rem;" alt="{{skill}}"/>
+        </div>
+    </div>
+</div>
