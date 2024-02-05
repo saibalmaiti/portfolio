@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
+  url: string = 'assets/details.json';
+  details:any;
+  projectDetails:any
 
   ngOnInit(): void {
   }

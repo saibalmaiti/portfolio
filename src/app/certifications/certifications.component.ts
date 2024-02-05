@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CertificationsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
+  url: string = 'assets/details.json';
+  details:any;
+  certificationDetails:any
 
   ngOnInit(): void {
+    this.http.get(this.url).subscribe(res => {
+      this.details = res;
+      this.certificationDetails = this.details.certificationsection;
+    });
   }
 
 }
