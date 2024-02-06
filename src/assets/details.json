@@ -31,5 +31,27 @@
 
             }
         ]
+    },
+    "projectsection":{
+        "projects":[
+            {
+                "name":"Inventroy Manager",
+                "details":"This is an Android application to manage the inventory of a small-scale business. Built using firebase backend. It uses QR code based recording system to keep track of inventory.Implemented a QR code generator based on product details and a QR code scanner using Zxing library to identify the product and add/remove it automatically from the stock",
+                "imagename":"inventory-app.png",
+                "alt":"inventory-app demo",
+                "sourcecode":"https://github.com/saibalmaiti/InventoryManager_QR",
+                "isdemo":true,
+                "demourl":"https://drive.google.com/file/d/1GoJ3-T2oyhA1bPcSopIs8pEYshA2f94f/view?usp=sharing"
+            },
+            {
+                "name":"Employee Management System",
+                "details":"This is a web-based employee management and attendance management system using Spring boot, AngularJS. Using this admin can keep record of existing employees in a company and can also onboard new employees. Employees can use this to give daily attendance which will be montiored by admin and admin get a report of employees with low attendance",
+                "imagename":"employee-attendance.png",
+                "alt":"employee-management demo",
+                "sourcecode":"https://github.com/saibalmaiti/employee_attandace_app",
+                "isdemo":false,
+                "demourl":""
+            }
+        ]
     }
 }
