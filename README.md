@@ -1,27 +1,53 @@
-# Portfolio
+<h2 align="center">
+  Portfolio <br/>
+  <a href="https://saibalmaiti.github.io/me.portfolio/home" target="_blank">Saibal Portfolio</a>
+</h2>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.7.
+<div align="center">
+  <img alt="Demo" src="https://github.com/saibalmaiti/portfolio/assets/51844015/ee7ca72c-6d81-44f4-b700-34f9a057babf" />
+</div>
+<br>
 
-## Development server
+<center>
+  
+[![forthebadge](https://forthebadge.com/images/badges/made-with-typescript.svg)](https://forthebadge.com) &nbsp;
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+</center>
 
-## Code scaffolding
+You can fork this repo to modify and make changes of your own. Please give me proper credit. Thanks!
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Built With
+
+My personal portfolio features some of my GitHub projects as well as my resume and technical skills.<br/>
+
+This project was built using these technologies.
+
+- Angular.js
+- CSS3
+
+## Features
+
+**📖 Multi-Page Layout**
+
+**🎨 Styled with Bootstrap**
+
+**📱 Responsive**
+
+## Usage Instructions
+
+Open the project folder and Navigate to `/src/assets/details.json`. <br/>
+Edit the json file according to your information and build it. For images, you can find separate folders for separate pages, you can upload your images there.
+For skills, please upload the files with the same name used in the skills parameter in json.
+
+## 🛠 Installation and Setup Instructions
+
+1. Installation: `npm install`
+
+2. In the project directory, you can run: `ng serve`
+
+Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
