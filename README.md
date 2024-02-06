@@ -1,6 +1,6 @@
 <h2 align="center">
   Portfolio <br/>
-  <a href="https://saibalmaiti.github.io/me.portfolio/home" target="_blank">Saibal Portfolio</a>
+  <a href="https://saibalmaiti.github.io/me.portfolio/" target="_blank">Saibal Portfolio</a>
 </h2>
 
 <div align="center">
