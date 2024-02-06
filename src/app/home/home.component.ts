@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit, ElementRef } from '@angular/core';
 
 @Component({
@@ -7,7 +8,10 @@ import { Component, OnInit, ElementRef } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
+  url: string = 'assets/details.json';
+  details:any;
+  homeDetails:any
 
   lottieOptions: any = {
     path: 'assets/lottie/landingPerson.json', // Path to your Lottie animation JSON file
@@ -16,6 +20,10 @@ export class HomeComponent implements OnInit {
     autoplay: true, // Set to true if you want the animation to play automatically
   };
   ngOnInit(): void {
+    this.http.get(this.url).subscribe(res => {
+      this.details = res;
+      this.homeDetails = this.details.homesection;
+    });
   }
 
 }

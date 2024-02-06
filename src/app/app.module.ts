@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { components } from './app-routing.module';
 import { LottieModule } from 'ngx-lottie';
-import { ProjectsComponent } from './projects/projects.component';
+import {HttpClientModule} from '@angular/common/http';
 
 export function playerFactory() {
   return import('lottie-web');
@@ -21,7 +21,8 @@ export function playerFactory() {
   imports: [
     BrowserModule,
     AppRoutingModule,
-    LottieModule.forRoot({ player: playerFactory })
+    LottieModule.forRoot({ player: playerFactory }),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

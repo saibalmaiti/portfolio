@@ -3,26 +3,15 @@
         <h1 class="skill-heading">My Recent Works</h1>
         <p class="details">Here are my few project I've recently worked</p>
     </div>
-    <div class="row tech-icons">
+    <div class="row tech-icons" *ngFor="let project of projectDetails.projects">
         <div class="col-md-6" style="justify-content: center; align-items: center; display: flex; ">
-            <img src="assets/projects/inventory-app.png" style="object-fit: cover; height: 80%;" alt="inventory-app demo">
+            <img src="assets/projects/{{project.imagename}}" class="center-fit" alt={{project.alt}}>
         </div>
         <div class="col-md-6" style="margin-top: 30px;">
-            <h1 class="skill-heading">Inventroy Manager</h1>
-            <p class="details" style="font-size: 1rem;">This is an Android application to manage the inventory of a small-scale business. Built using firebase backend. It uses QR code based recording system to keep track of inventory.Implemented a QR code generator based on product details and a QR code scanner using Zxing library to identify the
-                product and add/remove it automatically from the stock</p>
-                <button class="btn btn-purple-fill" (click)="goTogitHub('https://github.com/saibalmaiti/InventoryManager_QR')">Source Code</button>
-                <button class="btn btn-purple-fill" (click)="downloadApk()" style="margin-left: 25px;">Dowload APK</button>
-        </div>
-    </div>
-    <div class="row tech-icons">
-        <div class="col-md-6" style="justify-content: center; align-items: center; display: flex; ">
-            <img src="assets/projects/employee-attendance.png" style="object-fit: cover; max-height: 100%; max-width: 100%;" alt="inventory-app demo">
-        </div>
-        <div class="col-md-6" style="margin-top: 30px;">
-            <h1 class="skill-heading">Employee Management System</h1>
-            <p class="details" style="font-size: 1rem;">This is a web-based employee management and attendance management system using Spring boot, AngularJS. Using this admin can keep record of existing employees in a company and can also onboard new employees. Employees can use this to give daily attendance which will be montiored by admin and admin get a report of employees with low attendance</p>
-                <button class="btn btn-purple-fill" (click)="goTogitHub('https://github.com/saibalmaiti/employee_attandace_app/tree/main')">Source Code</button>
+            <h1 class="skill-heading">{{project.name}}</h1>
+            <p class="details" style="font-size: 1rem;">{{project.details}}</p>
+                <button class="btn btn-purple-fill" (click)="goTogitHub(project.sourcecode)">Source Code</button>
+                <button class="btn btn-purple-fill" (click)="downloadApk(project.demourl)" style="margin-left: 25px; padding-left: 25px; padding-right: 25px;" *ngIf="project.isdemo">Demo </button>
         </div>
     </div>
 </div>

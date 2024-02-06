@@ -1,0 +1,57 @@
+{
+    "firstname":"Saibal",
+    "lastname":"Maiti",
+    "homesection":{
+        "intro":"A Full Stack Software Engineer and a Passionate Learner.",
+        "linkdin":"https://www.linkedin.com/in/saibal-maiti-6b930018b/",
+        "github":"https://github.com/saibalmaiti",
+        "resume":"https://drive.google.com/file/d/1PP0UPwhQ20gOHT6RrtPUGRv5gLsWxH0f/view?usp=sharing"
+    },
+    "aboutsection":{
+        "_skillscomment":"Put svg files with the same name as in skills list. You can download logos from https://www.iconfinder.com/, https://www.vectorlogo.zone/",
+        "skills":["Java","Python","JavaScript","TypeScript","C","Spring-Boot", "ReactJS","Angular","Android","MySQL","PostgresSQL","AWS","Firebase"],
+        "location":"Kolkata, India",
+        "employed":true,
+        "organization":"Cognizant",
+        "designation":"Software Developer",
+        "careerdetails":"I have completed Bachelor of Technology (B.Tech) in Electronics and Communication Enginnering from Academy of Technology, Hooghly."
+    },
+    "certificationsection":{
+        "certificates":[
+            {
+                "name":"AWS Certified Cloud Practioner",
+                "imagename":"AWS Certified Cloud Practitioner certificate_page-0001.jpg",
+                "alt":"aws cloud practitioner certificate",
+                "details":"I have completed AWS Cloud Practioner certification on April, 2023. By completing this certificate I achieved following technical milestone,",
+                "learningpoints":[
+                    "I've acquired a comprehensive understanding of basic AWS Cloud architectural principles, enabling me to design and deploy scalable and reliable cloud solutions.",
+                    "I've mastered key AWS services, such as EC2, S3, RDS, and IAM, learning their functionalities, use cases, and best practices for implementation.",
+                    "I've learned essential AWS security practices and compliance measures."
+                ]
+
+            }
+        ]
+    },
+    "projectsection":{
+        "projects":[
+            {
+                "name":"Inventroy Manager",
+                "details":"This is an Android application to manage the inventory of a small-scale business. Built using firebase backend. It uses QR code based recording system to keep track of inventory.Implemented a QR code generator based on product details and a QR code scanner using Zxing library to identify the product and add/remove it automatically from the stock",
+                "imagename":"inventory-app.png",
+                "alt":"inventory-app demo",
+                "sourcecode":"https://github.com/saibalmaiti/InventoryManager_QR",
+                "isdemo":true,
+                "demourl":"https://drive.google.com/file/d/1GoJ3-T2oyhA1bPcSopIs8pEYshA2f94f/view?usp=sharing"
+            },
+            {
+                "name":"Employee Management System",
+                "details":"This is a web-based employee management and attendance management system using Spring boot, AngularJS. Using this admin can keep record of existing employees in a company and can also onboard new employees. Employees can use this to give daily attendance which will be montiored by admin and admin get a report of employees with low attendance",
+                "imagename":"employee-attendance.png",
+                "alt":"employee-management demo",
+                "sourcecode":"https://github.com/saibalmaiti/employee_attandace_app",
+                "isdemo":false,
+                "demourl":""
+            }
+        ]
+    }
+}

@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
+  url: string = 'assets/details.json';
+  details:any;
+  aboutDetails:any;
+  skills: string[] = []; 
 
   lottieOptions: any = {
     path: 'assets/lottie/codingPerson.json', // Path to your Lottie animation JSON file
@@ -17,7 +22,12 @@ export class AboutComponent implements OnInit {
   };
 
   ngOnInit(): void {
+    this.http.get(this.url).subscribe(res => {
+      this.details = res;
+      this.aboutDetails = this.details.aboutsection;
+      this.skills = this.aboutDetails.skills;
+    });
   }
-  skills: string[] = ['Java','Python','JavaScript','TypeScript','C','Spring-Boot', 'ReactJS','Angular','Android','MySQL','PostgresSQL','AWS','Firebase'];
+  
 
 }

@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,17 +8,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
+  url: string = 'assets/details.json';
+  details:any;
+  projectDetails:any
 
   ngOnInit(): void {
+    this.http.get(this.url).subscribe(res => {
+      this.details = res;
+      this.projectDetails = this.details.projectsection;
+    });
   }
 
-  goTogitHub(link:string) {
-    window.location.href = link
+  goTogitHub(url:string) {
+    window.location.href = url
   }
 
-  downloadApk() {
-    window.location.href = "https://drive.google.com/file/d/1GoJ3-T2oyhA1bPcSopIs8pEYshA2f94f/view?usp=sharing"
+  downloadApk(url:string) {
+    window.location.href = url
   }
 
 }
